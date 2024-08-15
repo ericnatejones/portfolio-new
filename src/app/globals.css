@@ -11,16 +11,52 @@ body, html {
   background-position: center;
   height: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
   color: white;
+  grid-gap: 50px;
+}
+
+.navbar {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.feed-container {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+  width: 20%;
+}
+
+.left-feed {
+  text-align: left;
+}
+
+.right-feed {
+  text-align: right;
 }
 
 .content {
   background: rgba(0, 0, 0, 0.6);
   padding: 20px;
   border-radius: 10px;
+  flex: 1;
+  margin: 0 20px;
 }
 
 .name {
@@ -28,25 +64,79 @@ body, html {
   margin: 0;
 }
 
-.profile-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin: 20px 0;
+.work-link {
+  border-radius: 5px;
+    background: #ff5722;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background 0.3s;
+    margin: 10px 30px;
+    width: 200px;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: stretch;
+    justify-content: space-around;
+    justify-items: stretch;
+    align-items: center;
+    padding: 5px;
 }
 
-.work-link {
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 5px;
-  background: #ff5722;
+.work-link:hover {
+  background: #e64a19;
+}
+
+.icon {
+  padding: 0 30px;
+  transform: scale(0.5); 
+}
+
+@media screen and (max-width: 900px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+  
+  .feed-container {
+    display: none; /* Hide feeds on small screens */
+  }
+  
+  .navbar {
+    justify-content: center;
+  }
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.navbar-links a {
   color: white;
   text-decoration: none;
-  font-size: 1.2em;
-  transition: background 0.3s;
-  margin: 30px;
+  margin: 0 10px;
+  transition: color 0.3s;
 }
 
-.arcade-link:hover {
-  background: #e64a19;
+.navbar-links a:hover {
+  color: #ff5722;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  background-color: white;
+  margin: 4px 0;
+  width: 25px;
+  height: 3px;
+}
+
+@media screen and (max-width: 900px) {
+
+  
+  .hamburger-menu {
+    display: flex;
+  }
 }
