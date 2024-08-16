@@ -30,6 +30,9 @@ export default function Projects() {
         <section>
           <h2>Dentist Registry</h2>
           <p>
+            <a href='https://dentists-six.vercel.app/'>A work in progress</a> 
+          </p>
+          <p>
             I'm working on a comprehensive dentist registry, similar to Zillow or Rentals.com, but specifically for dentists. 
             This platform will help users find and connect with dental professionals in their area, complete with reviews, 
             ratings, and detailed profiles.
