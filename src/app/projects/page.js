@@ -22,7 +22,7 @@ export default function Projects() {
                 <div className="space-y-4">
                   <a href="https://react-arcade.netlify.app/" className="block bg-purple-100 p-4 rounded-lg shadow-md hover:bg-purple-200 transform hover:scale-105 transition">
                     <ReactPlayer
-                      url="/arcade.mp4"
+                      url="/arcade_converted.mp4"
                       className="rounded-lg overflow-hidden"
                       width="100%"
                       height="200px"
@@ -50,7 +50,7 @@ export default function Projects() {
                 <div className="space-y-4">
                   <a href="https://terrain-builder.netlify.app/" className="block bg-yellow-100 p-4 rounded-lg shadow-md hover:bg-yellow-200 transform hover:scale-105 transition">
                     <ReactPlayer
-                      url="/terrainbuilder.mp4"
+                      url="/terrainbuilder_converted.mp4"
                       className="rounded-lg overflow-hidden"
                       width="100%"
                       height="200px"
@@ -79,7 +79,7 @@ export default function Projects() {
                 <div className="space-y-4">
                   <a href="https://exciting-dots.surge.sh/" className="block bg-green-100 p-4 rounded-lg shadow-md hover:bg-green-200 transform hover:scale-105 transition">
                     <ReactPlayer
-                        url="/dots.mp4"
+                        url="/dots_converted.mp4"
                         className="rounded-lg overflow-hidden"
                         width="100%"
                         height="200px"
@@ -114,7 +114,7 @@ export default function Projects() {
             <div className="space-y-4">
               <a href="https://dentists-six.vercel.app/" className="block bg-blue-100 p-4 rounded-lg shadow-md hover:bg-blue-200 transform hover:scale-105 transition">
                <ReactPlayer
-                  url="/dente.mp4"
+                  url="/dente_converted.mp4"
                   className="rounded-lg overflow-hidden"
                   width="100%"
                   height="200px"
