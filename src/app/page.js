@@ -1,7 +1,11 @@
+'use client'
+
 import Image from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGamepad } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import Contact from "../components/Contact"
+import Projects from "../components/Projects";
 
 export default function Home() {
   return (
@@ -31,15 +35,11 @@ export default function Home() {
             alt="Picture of the author"
             priority={true}
           />
+          <div className="mb-8">
           <h2>Developer</h2>
-          <a href="https://react-arcade.netlify.app/" target="_blank" className="work-link">Visit My Arcade<FontAwesomeIcon icon={faGamepad} className="icon" /></a>
-          <a href="https://github.com/ericnatejones" target="_blank" className="work-link">Visit My Github<FontAwesomeIcon icon={faGithub} className="icon" /></a>
-          <a href="https://www.linkedin.com/in/ericnatejones/" target="_blank" className="work-link">Visit My LinkedIn<FontAwesomeIcon icon={faLinkedin} className="icon" /></a>
-        </div>
-        
-        <div style={{display:"none"}} className="feed-container right-feed">
-          <h3>API Feed</h3>
-          {/* API feed will go here */}
+          </div>
+          <Projects/>
+          <Contact/>
         </div>
       </div>
     </>
