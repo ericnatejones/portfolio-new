@@ -8,7 +8,7 @@ export default function Projects() {
       <Head>
         <title>My Projects</title>
       </Head>
-      <header className="bg-ff5722 text-white py-6 mb-8">
+      <header className="bg-ff5722 py-6 mb-8">
         <h1 className="text-center text-4xl font-bold">My Projects</h1>
       </header>
 
