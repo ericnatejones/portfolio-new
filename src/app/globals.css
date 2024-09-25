@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body, html {
   margin: 0;
   padding: 0;
@@ -5,7 +10,7 @@ body, html {
   font-family: 'Arial', sans-serif;
 }
 
-.container {
+.my-container {
   background-image: url('/background.jpg');
   background-size: cover;
   background-position: center;
