@@ -21,7 +21,7 @@ export default function Projects() {
               <div className="bg-gray-200 p-4 rounded-lg shadow-md">
                 <div className="relative">
                     <ReactPlayer 
-                      url="/public/arcade.mp4" // Replace with your video URL
+                      url="/arcade.mp4" // Replace with your video URL
                       className="rounded-lg"
                       width="100%"
                       height="200px"
@@ -29,13 +29,7 @@ export default function Projects() {
                       loop
                       muted
                       style={{ borderRadius: '0.5rem' }} // Optional styling
-                      config={{
-                        file: {
-                          attributes: {
-                            controlsList: 'nodownload'
-                          }
-                        }
-                      }}
+                      
                     />
                   <a href="https://react-arcade.netlify.app/" className="text-xl font-bold mb-2">
                     React Arcade
@@ -44,7 +38,7 @@ export default function Projects() {
                 </div>
                 <div className="relative">
                   <ReactPlayer 
-                    url="/public/terrainbuilder.mp4" // Replace with your video URL
+                    url="/terrainbuilder.mp4" // Replace with your video URL
                     className="rounded-lg"
                     width="100%"
                     height="200px"
@@ -61,7 +55,7 @@ export default function Projects() {
 
                 <div className="relative">
                   <ReactPlayer 
-                    url="/public/dots.mp4" // Replace with your video URL
+                    url="/dots.mp4" // Replace with your video URL
                     className="rounded-lg"
                     width="100%"
                     height="200px"
@@ -84,7 +78,7 @@ export default function Projects() {
             <h2 className="text-2xl font-semibold mb-4 text-ff5722">Business Projects</h2>
             <div className="space-y-4">
             <ReactPlayer 
-                  url="/public/dente.mp4" // Replace with your video URL
+                  url="/dente.mp4" // Replace with your video URL
                   className="rounded-lg"
                   width="100%"
                   height="200px"
