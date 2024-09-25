@@ -27,6 +27,7 @@ export default function Home() {
             src="/profile.jpg"
             width={200}
             height={200}
+            style={{display: "inline-block"}}
             alt="Picture of the author"
             priority={true}
           />
