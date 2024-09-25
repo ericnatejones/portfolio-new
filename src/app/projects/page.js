@@ -19,56 +19,91 @@ export default function Projects() {
             <h2 className="text-2xl font-semibold mb-4 text-ff5722">Fun Projects</h2>
             <div className="space-y-4">
               <div className="bg-gray-200 p-4 rounded-lg shadow-md">
-                <div className="relative">
-                    <ReactPlayer 
-                      url="./arcade.mp4" // Replace with your video URL
-                      className="rounded-lg"
+                <div className="space-y-4">
+                  <a href="https://react-arcade.netlify.app/" className="block bg-purple-100 p-4 rounded-lg shadow-md hover:bg-purple-200 transform hover:scale-105 transition">
+                    <ReactPlayer
+                      url="/arcade.mp4"
+                      className="rounded-lg overflow-hidden"
                       width="100%"
                       height="200px"
-                      playing
-                      loop
-                      muted
-                      style={{ borderRadius: '0.5rem' }} // Optional styling
-                      
+                      playing={true}
+                      loop={true}
+                      muted={true}
+                      playsinline={true}
+                      config={{
+                        file: {
+                          attributes: {
+                            style: {
+                              width: '100%',
+                              height: '100%',
+                              objectFit: 'cover',
+                            },
+                          },
+                        },
+                      }}
+                      onError={(e) => console.error('ReactPlayer error:', e)}
                     />
-                  <a href="https://react-arcade.netlify.app/" className="text-xl font-bold mb-2">
-                    React Arcade
-                  </a>
-                  <p>These projects are where I solve some of my biggest code challenges in React.</p>
-                </div>
-                <div className="relative">
-                  <ReactPlayer 
-                    url="./terrainbuilder.mp4" // Replace with your video URL
-                    className="rounded-lg"
-                    width="100%"
-                    height="200px"
-                    playing
-                    loop
-                    muted
-                    style={{ borderRadius: '0.5rem' }} // Optional styling
-                  />
-                  <a href="https://terrain-builder.netlify.app/" className="text-xl font-bold mb-2">
-                    Terrain Builder
+                    <h3 className="text-xl font-bold mb-2">React Arcade</h3>
+                    <p>These projects are where I solve some of my biggest code challenges in React.</p>
                   </a>
                 </div>
-                <p>I'm stoked on what I was able to do here. Take some time to figure out how it works!</p>
+                <div className="space-y-4">
+                  <a href="https://terrain-builder.netlify.app/" className="block bg-yellow-100 p-4 rounded-lg shadow-md hover:bg-yellow-200 transform hover:scale-105 transition">
+                    <ReactPlayer
+                      url="/terrainbuilder.mp4"
+                      className="rounded-lg overflow-hidden"
+                      width="100%"
+                      height="200px"
+                      playing={true}
+                      loop={true}
+                      muted={true}
+                      playsinline={true}
+                      config={{
+                        file: {
+                          attributes: {
+                            style: {
+                              width: '100%',
+                              height: '100%',
+                              objectFit: 'cover',
+                            },
+                          },
+                        },
+                      }}
+                      onError={(e) => console.error('ReactPlayer error:', e)}
+                    />
+                    <h3 className="text-xl font-bold mb-2">Terrain Builder</h3>
+                    <p>I'm stoked on what I was able to do here. Take some time to figure out how it works!</p>
+                  </a>
+                </div>
 
-                <div className="relative">
-                  <ReactPlayer 
-                    url="./dots.mp4" // Replace with your video URL
-                    className="rounded-lg"
-                    width="100%"
-                    height="200px"
-                    playing
-                    loop
-                    muted
-                    style={{ borderRadius: '0.5rem' }} // Optional styling
-                    />
-                  <a href="https://exciting-dots.surge.sh/" className="text-xl font-bold mb-2">
-                    Exciting Dots
+                <div className="space-y-4">
+                  <a href="https://exciting-dots.surge.sh/" className="block bg-green-100 p-4 rounded-lg shadow-md hover:bg-green-200 transform hover:scale-105 transition">
+                    <ReactPlayer
+                        url="/dots.mp4"
+                        className="rounded-lg overflow-hidden"
+                        width="100%"
+                        height="200px"
+                        playing={true}
+                        loop={true}
+                        muted={true}
+                        playsinline={true}
+                        config={{
+                          file: {
+                            attributes: {
+                              style: {
+                                width: '100%',
+                                height: '100%',
+                                objectFit: 'cover',
+                              },
+                            },
+                          },
+                        }}
+                        onError={(e) => console.error('ReactPlayer error:', e)}
+                      />
+                    <h3 className="text-xl font-bold mb-2">Exciting Dots</h3>
+                    <p>Explore the fun and interactive world of Exciting Dots.</p>
                   </a>
                 </div>
-                <p>Explore the fun and interactive world of Exciting Dots.</p>
               </div>
             </div>
           </section>
@@ -77,17 +112,29 @@ export default function Projects() {
           <section className="bg-white shadow-lg rounded-lg p-6">
             <h2 className="text-2xl font-semibold mb-4 text-ff5722">Business Projects</h2>
             <div className="space-y-4">
-            <ReactPlayer 
-                  url="./dente.mp4" // Replace with your video URL
-                  className="rounded-lg"
+              <a href="https://dentists-six.vercel.app/" className="block bg-blue-100 p-4 rounded-lg shadow-md hover:bg-blue-200 transform hover:scale-105 transition">
+               <ReactPlayer
+                  url="/dente.mp4"
+                  className="rounded-lg overflow-hidden"
                   width="100%"
                   height="200px"
-                  playing
-                  loop
-                  muted
-                  style={{ borderRadius: '0.5rem' }} // Optional styling
+                  playing={true}
+                  loop={true}
+                  muted={true}
+                  playsinline={true}
+                  config={{
+                    file: {
+                      attributes: {
+                        style: {
+                          width: '100%',
+                          height: '100%',
+                          objectFit: 'cover',
+                        },
+                      },
+                    },
+                  }}
+                  onError={(e) => console.error('ReactPlayer error:', e)}
                 />
-              <a href="https://dentists-six.vercel.app/" className="block bg-blue-100 p-4 rounded-lg shadow-md hover:bg-blue-200 transform hover:scale-105 transition">
                 <h3 className="text-xl font-bold mb-2">Dentist Registry</h3>
                 <p>I'm working on a comprehensive dentist registry, similar to Zillow or Rentals.com, but specifically for dentists. This platform will help users find and connect with dental professionals in their area, complete with reviews, ratings, and detailed profiles.</p>
                 <p>Stay tuned for more updates as I build out features and refine the user experience.</p>
