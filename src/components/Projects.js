@@ -112,7 +112,7 @@ export default function Projects() {
                   url="/dentistsherpa.mp4"
                   className="rounded-lg overflow-hidden"
                   width="100%"
-                  height="200px"
+                  height="500px"
                   playing={true}
                   loop={true}
                   muted={true}
@@ -122,7 +122,7 @@ export default function Projects() {
                       attributes: {
                         style: {
                           width: '100%',
-                          height: '240%',
+                          height: '100%',
                           objectFit: 'cover',
                         },
                       },
