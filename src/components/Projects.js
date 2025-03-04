@@ -122,7 +122,7 @@ export default function Projects() {
                       attributes: {
                         style: {
                           width: '100%',
-                          height: '100%',
+                          height: '240%',
                           objectFit: 'cover',
                         },
                       },
