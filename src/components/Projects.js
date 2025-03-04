@@ -107,9 +107,9 @@ export default function Projects() {
           <section className="bg-white shadow-lg rounded-lg p-6">
             <h2 className="text-2xl font-semibold mb-4 text-ff5722">Business Projects</h2>
             <div className="space-y-4">
-              <a href="https://dentists-six.vercel.app/" className="block bg-blue-100 p-4 rounded-lg shadow-md hover:bg-blue-200 transform hover:scale-105 transition">
+              <a href="https://dentistsherpa.com/" className="block bg-blue-100 p-4 rounded-lg shadow-md hover:bg-blue-200 transform hover:scale-105 transition">
                <ReactPlayer
-                  url="/dente_converted.mp4"
+                  url="/dentistsherpa.mp4"
                   className="rounded-lg overflow-hidden"
                   width="100%"
                   height="200px"
