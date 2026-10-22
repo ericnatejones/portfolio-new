@@ -197,7 +197,7 @@ h2 {
   font-style:normal;
   color:var(--muted)
 }
-.art-number {
+.art-note {
   position:absolute;
   bottom:20px;
   left:39px;
@@ -443,10 +443,6 @@ h2 {
 }
 .service-top .eyebrow {
   font-size:8px
-}
-.service-number {
-  font-size:10px;
-  color:var(--muted)
 }
 .service-icon {
   width:90px;
