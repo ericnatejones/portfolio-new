@@ -1,20 +1,6 @@
+import Image from 'next/image';
+import Contact from '../../components/Contact';
+export const metadata = { title: 'About Eric' };
 export default function About() {
-    return (
-<div className="about content">
-        <h1>About Me</h1>
-        <section className="bio">
-          <h2>Hi, I'm Eric Jones</h2>
-          <p>
-            As a senior-level developer with a strong background in React and associated technologies, I thrive on solving complex problems and building engaging user experiences. I've also taught Python and enjoyed guiding others through their coding journey.
-          </p>
-          <p>
-            When I'm not coding, you can find me kayaking or exploring new environments, always on the lookout for the next adventure. My passion for technology extends beyond the screen—I'm dedicated to sharing my knowledge and fostering growth in the tech community.
-          </p>
-          <p>
-            My goal is to leverage my skills to create innovative solutions and contribute to exciting projects. Let's connect and explore how we can collaborate!
-          </p>
-        </section>
-        
-      </div>
-    )
+  return <><section className="about-page shell"><p className="eyebrow">A NEIGHBOR YOU CAN ASK</p><h1>Hi, I’m Eric Jones.</h1><div className="about-page-grid"><Image className="about-photo" src="/profile.jpg" width={280} height={280} alt="Eric Jones" priority/><div className="about-body"><h2>We can work through it together.</h2><p>I’m based in Carson, Washington, and help people with websites, custom tools, and everyday technology. I enjoy helping people understand what they’re using, so they can handle more on their own.</p><p>As a senior level developer, my background includes React and web development. I’ve also taught Python and enjoy guiding people through something new, one step at a time.</p><p>You don’t need to know the technical words. Start with what’s frustrating you, what’s taking too much time, or what you wish worked better.</p><p>When I’m away from the screen, you can find me kayaking or exploring somewhere new.</p><p className="credentials">CompTIA certified · A+ · Network+ · Security+</p></div></div></section><Contact/></>;
 }

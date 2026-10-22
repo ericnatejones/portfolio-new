@@ -1,18 +1,4 @@
 import Link from 'next/link';
-
-const Navbar = () => (
-  <nav className="navbar">
-    <div className="navbar-links">
-      <Link href="/about">About</Link>
-      <Link href="/projects">Projects</Link>
-      <Link href="/contact">Contact</Link>
-    </div>
-    <div className="navbar-links"><Link href="/">Profile Home</Link></div>
-    
-
-  </nav>
-);
-
-export default Navbar;
-
-
+export default function Navbar() {
+  return <header className="site-header"><nav className="shell navigation" aria-label="Main navigation"><Link className="brand" href="/">ERIC JONES<span>COMPUTER & WEB HELP</span></Link><div className="nav-links"><Link href="/#services">Services</Link><Link href="/projects">Selected work</Link><Link href="/about">About Eric</Link><Link className="nav-contact" href="/contact">Let’s talk <span aria-hidden="true">↗</span></Link></div></nav></header>;
+}

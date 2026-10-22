@@ -1,47 +1,12 @@
-'use client'
-
-import Image from "next/image";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGamepad } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import Contact from "../components/Contact"
-import Projects from "../components/Projects";
-
+import Link from 'next/link';
+import { ArrowUpRight, Check } from 'lucide-react';
+import ServiceIcon from '../components/ServiceIcon';
+import Contact from '../components/Contact';
+const services = [
+  {type:'web', label:'WEBSITES & ONLINE SHOPS', title:'Make your website work for your shop.', text:'A website should make it easier for people to understand your business and take the next step.', items:['Shopify & WordPress','Website fixes & improvements','Development & maintenance'], note:'Have a site that’s been sitting unfinished? Let’s look at it.'},
+  {type:'tools', label:'PROTOTYPES & CUSTOM TOOLS', title:'Try the idea. See what works.', text:'Have an idea for something your business needs? We can make a working version to try together.', items:['Working prototypes','Custom web tools','Improvements to everyday tasks'], note:'Start with the task you wish didn’t take so much time.'},
+  {type:'learn', label:'PATIENT GUIDANCE & PRACTICAL AI', title:'Learn something. Keep the know-how.', text:'We’ll make room for questions and work at a pace that makes sense, so you can handle more on your own.', items:['Understand your tech','Explore useful ways to use AI','Learn as we work together'], note:'Bring a real problem. We’ll work through it together.'}
+];
 export default function Home() {
-  return (
-    
-        
-       <>
-      
-      <div className="content-wrapper">
-        {/* <div className="feed-container left-feed">
-          <h3>Instagram Feed</h3>
-          <iframe
-        src="https://snapwidget.com/embed/your-instagram-feed-code"
-        title="Instagram Feed"
-        frameBorder="0"
-        scrolling="no"
-        style={{ width: '100%', height: '100%' }}
-      ></iframe>
-        </div> */}
-        
-        <div className="content">
-          <h1 className="name">Eric Jones</h1>
-          <Image
-            src="/profile.jpg"
-            width={200}
-            height={200}
-            style={{display: "inline-block"}}
-            alt="Picture of the author"
-            priority={true}
-          />
-          <div className="mb-8">
-          <h2>Developer</h2>
-          </div>
-          <Projects/>
-          <Contact/>
-        </div>
-      </div>
-    </>
-  );
+ return <><section className="hero shell"><div className="hero-copy"><p className="eyebrow"><span className="status-dot"/> A NEIGHBOR YOU CAN ASK · CARSON, WA</p><h1>Your shop.<br/>Your ideas.<br/><em>A little help.</em></h1><p className="hero-description">Websites, useful tools, and a little less tech frustration. Practical help for your business, from someone right here in your community.</p><div className="hero-actions"><Link href="/contact" className="button">Let’s talk about it <ArrowUpRight size={18}/></Link><a className="text-link" href="#services">See how I can help <span aria-hidden="true">↓</span></a></div><p className="small-note">First hour free. A conversation is a good place to start.</p></div><div className="hero-art"><div className="art-label">A LITTLE SUPPORT. A LOT OF POSSIBILITY.</div><div className="desk-scene" aria-hidden="true"><div className="monitor"><div className="monitor-bar"><i/><i/><i/></div><div className="screen-content"><div className="screen-block"/><div className="screen-lines"><b/><b/><b/></div></div><div className="screen-bottom"/></div><div className="monitor-neck"/><div className="monitor-foot"/><div className="desk-top"><div className="keyboard"/><div className="notebook"/><div className="coffee"/></div><div className="desk-leg left"/><div className="desk-leg right"/></div><p className="art-caption">Get it working.<br/><em>Learn to maintain it as we go.</em></p><span className="art-number">01 / LET’S MAKE IT WORK</span></div></section><div className="trust-strip"><div className="shell trust-inner"><span>LOCAL HELP. REAL CONVERSATIONS.</span><p><Check size={15}/> CompTIA A+, Network+, Security+</p><p><Check size={15}/> Carson, WA + surrounding areas</p></div></div><section className="services-section shell" id="services"><div className="section-heading"><p className="eyebrow">HOW I CAN HELP</p><h2>Good technology should<br/>make your day easier.</h2><p>For the site that needs attention, the idea you want to try, or the thing you just want someone to explain.</p></div><div className="services-grid">{services.map((service,i)=><article className="service" key={service.type}><div className="service-top"><span className="eyebrow">{service.label}</span><span className="service-number">0{i+1}</span></div><ServiceIcon type={service.type}/><h3>{service.title}</h3><p>{service.text}</p><ul>{service.items.map(item=><li key={item}>{item}</li>)}</ul><p className="service-note">{service.note}</p></article>)}</div></section><section className="about-band"><div className="shell about-grid"><div><p className="eyebrow">A NEIGHBOR YOU CAN ASK</p><h2>No need to know<br/>the right words.</h2></div><div><p>Technology can be overwhelming. You can start with what’s frustrating you, what’s taking too much time, or what you wish worked better.</p><p>I’m Eric. I enjoy helping people understand what they’re using, so they can handle more on their own.</p><Link href="/about" className="text-link">A little more about me <ArrowUpRight size={17}/></Link></div></div></section><Contact/></>;
 }
